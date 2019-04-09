@@ -55,8 +55,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Disruptor.example\Disruptor.basic.csproj">
-      <Project>{AEB2E6C7-5CA4-4BA4-83B0-477C72B7B36D}</Project>
+    <ProjectReference Include="..\Disruptor.basic\Disruptor.basic.csproj">
+      <Project>{aeb2e6c7-5ca4-4ba4-83b0-477c72b7b36d}</Project>
       <Name>Disruptor.basic</Name>
     </ProjectReference>
   </ItemGroup>

@@ -7,8 +7,8 @@
     <ProjectGuid>{AEB2E6C7-5CA4-4BA4-83B0-477C72B7B36D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Disruptor.example</RootNamespace>
-    <AssemblyName>Disruptor.example</AssemblyName>
+    <RootNamespace>Disruptor.basic</RootNamespace>
+    <AssemblyName>Disruptor.basic</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
