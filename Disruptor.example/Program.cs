@@ -7,24 +7,6 @@ using System.Threading.Tasks;
 
 namespace Disruptor.basic
 {
-    public sealed class MyValueEntry
-    {
-        public long Value { get; set; }
-
-        public MyValueEntry()
-        {
-            Console.WriteLine("New ValueEntry created");
-        }
-    }
-
-    public class MyValueAdditionHandler : IEventHandler<MyValueEntry>
-    {
-        public void OnEvent(MyValueEntry data, long sequence, bool endOfBatch)
-        {
-            Console.WriteLine("Event handled: Value = {0} (processed event {1}", data.Value, sequence);
-        }
-    }
-
     class Program
     {
         private static readonly Random _random = new Random();
