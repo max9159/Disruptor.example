@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Disruptor.example
+namespace Disruptor.basic
 {
     public sealed class MyValueEntry
     {
