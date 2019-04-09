@@ -6,7 +6,7 @@ namespace Disruptor.basic
     {
         public void OnEvent(MyValueEntry data, long sequence, bool endOfBatch)
         {
-            Console.WriteLine("Event handled: Value = {0} (processed event {1}", data.Value, sequence);
+            Console.WriteLine($"[MyValueAdditionHandler] OnEvent: Value = { data.Value } (processed event sequence { sequence }");
         }
     }
 }
