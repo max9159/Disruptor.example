@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Disruptor.example;
 
 namespace Disruptor.basic
 {
@@ -15,7 +16,7 @@ namespace Disruptor.basic
         {
             var disruptor = new Disruptor.Dsl.Disruptor<MyValueEntry>(() => new MyValueEntry(), _ringSize, System.Threading.Tasks.TaskScheduler.Default);
 
-            disruptor.HandleEventsWith(new MyValueAdditionHandler());
+            disruptor.HandleEventsWith(new MyValueAdditionHandler()).Then(new MyLogHandler(@"C:\Disruptor.basic.log"));
 
             var ringBuffer = disruptor.Start();
 
